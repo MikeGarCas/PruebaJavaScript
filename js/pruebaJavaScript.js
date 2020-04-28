@@ -1,4 +1,24 @@
 //Arreglo y SubArreglo - ejercicio 1
+// se hicieron las pruebas con los datos: [1,-2,-1,0]
+function subArray(arr){
+	subarrays = [];	
+	pos = 0;
+	while(pos < arr.length){
+		inarr = [];
+		for (var i = pos; i < arr.length; i++) {
+			if(arr[i] < arr[i+1]){
+				inarr.pop();
+				inarr.push(arr[i],arr[i+1])
+			}else{
+				subarrays.push(inarr);
+				pos = i+1;
+				break;
+			}
+		}		
+	}
+		
+	return subarrays.sort(function(a, b){return b.length-a.length}).shift()
+}
 
 //  Resultado de la suma de los números - ejercicio 2
 function numSum(n, m){
