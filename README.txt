@@ -34,3 +34,8 @@ Tiempo 3 horas
 Lo maneje con un json para más control, despues le quite los dos puntos para que quedara como números y no como horas
 validaciones si es que cumplen si es mayor que el resto o menor para poder contemplarse. Puse un contador para que
 si cumple con las condiciones vaya aumentando y este será el número de salones.
+
+
+
+-----Las pruebas unitarias se realizaron con Clean Code.---
+-----La mayoría de las funciones tiene datos hard code con los mismos que se hicieron los test------
